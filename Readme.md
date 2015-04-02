@@ -14,12 +14,12 @@ git merge --no-ff nueva_funcionalidad
 git branch -d nueva_funcionalidad
 git push origin devel
 ```
-<i>
-1. Cambia al branch devel
-2. Actualiza sin fast-forward
-3. Borra el branch "nueva_funcionalidad"
-4. Actualiza los nuevos cambios en el branch "devel"
-</i>
+
+<p>1. <i>Cambia al branch devel</i></p>
+<p>2. <i>Actualiza sin fast-forward</i></p>
+<p>3. <i>Borra el branch "nueva_funcionalidad"</i></p>
+<p>4. <i>Actualiza los nuevos cambios en el branch "devel"</i></p>
+
 
 # BRANCH RELEASE
 
@@ -28,7 +28,8 @@ Debe llamarse release-NUMERO_VERSION, donde NUMERO_VERSION es el identificador d
 ```
 git checkout -b release-NUMERO_VERSION devel
 ```
-> Crea el branch para el nuevo release
+
+<i>Crea el branch para el nuevo release</i>
 
 Crear un archivo llamado Release-NUMERO_VERSION.txt con el siguiente contenido:
 
@@ -44,7 +45,7 @@ Crear un archivo llamado Release-NUMERO_VERSION.txt con el siguiente contenido:
 git commit -a -m "Inicializando Versión NUMERO_VERSION"
 ```
 
-> Incializa la versión NUMERO_VERSION
+<i>Incializa la versión NUMERO_VERSION</i>
 
 Liberación de una versión a producción
 
@@ -54,9 +55,9 @@ git merge --no-ff release-NUMERO_VERSION
 git tag -a NUMERO_VERSION
 ```
 
-> 1. Cambia al branch "master"
-> 2. Combina los cambios realizados desde el nuevo relase a "master"
-> 3. Se numera la versión del release en "master"
+<p>1. <i>Cambia al branch "master"</i></p>
+<p>2. <i>Combina los cambios realizados desde el nuevo relase a "master"</i></p>
+<p>3. <i>Se numera la versión del release en "master"</i></p>
 
 Además se deben incorporar los cambios a "devel"
 
@@ -65,8 +66,8 @@ git checkout devel
 git merge --no-ff release-NUMERO_VERSION
 ```
 
-> 1. Cambia al branch "devel"
-> 2. Realiza el merge
+<p>1. <i>Cambia al branch "devel"</i></p>
+<p>2. <i>Realiza el merge</i></p>
 
 Opcional: eliminar el branch del release
 
@@ -101,7 +102,7 @@ Se incializa la numeración del branch
 git commit -a -m "Bugfix NUMERO_VERSION.NUMERO_SECUENCIA_BUG"
 ```
 
-> Inicializa la numeración de versión y bug en el branch
+<i>Inicializa la numeración de versión y bug en el branch</i>
 
 Realizar los cambios en uno o mas commits y aplicar el cambio.
 
@@ -113,8 +114,8 @@ git tag -a NUMERO_VERSION.NUMERO_SECUENCIA_BUG
 git branch -d hotfix-NUMERO_VERSION.NUMERO_SECUENCIA_BUG 
 ```
 
-> 1. Crea el commit
-> 2. Cambia al branch "master"
-> 3. Realiza el merge de los cambios hacia el branch master
-> 4. Se numera la versión del release en "master", que incluye el identificador del bug
-> 5. Elimina el branch del bug
+<p>1. <i>Crea el commit</i></p>
+<p>2. <i>Cambia al branch "master"</i></p>
+<p>3. <i>Realiza el merge de los cambios hacia el branch master</i></p>
+<p>4. <i>Se numera la versión del release en "master", que incluye el identificador del bug</i></p>
+<p>5. <i>Elimina el branch del bug</i></p>
