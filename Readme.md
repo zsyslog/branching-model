@@ -134,4 +134,6 @@ git branch -d hotfix-NUMERO_VERSION.NUMERO_SECUENCIA_BUG
 
 # COMANDOS UTILES
 
-[Historial, enmendar y regresar cambios](docs/cambios.md)
+- [Historial, enmendar y regresar cambios](docs/cambios.md)
+- [Seleccionar un commit específico con cherry-pick](docs/cherry-pick.md)
+
