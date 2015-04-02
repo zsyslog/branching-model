@@ -14,6 +14,10 @@ git merge --no-ff nueva_funcionalidad
 git branch -d nueva_funcionalidad
 git push origin devel
 ```
+
+<p>
+	hola
+</p>
 > 1. Cambia al branch devel
 > 2. Actualiza sin fast-forward
 > 3. Borra el branch "nueva_funcionalidad"
