@@ -39,27 +39,34 @@ Crear un archivo llamado Release-NUMERO_VERSION.txt con el siguiente contenido:
 > - developer 3: nombre developer 3
 > 
 ```
-git commit -a -m "Inicializando Versión NUMERO_VERSION" // incializa la versión NUMERO_VERSION
+git commit -a -m "Inicializando Versión NUMERO_VERSION"
 ```
-Liberacióbn de una versión a producción
+> Incializa la versión NUMERO_VERSION
+
+Liberación de una versión a producción
+
 ```
 git checkout master
 git merge --no-ff release-NUMERO_VERSION
 git tag -a NUMERO_VERSION
 ```
+
 > 1. Cambia al branch "master"
 > 2. Combina los cambios realizados desde el nuevo relase a "master"
 > 3. Se numera la versión del release en "master"
 
 Además se deben incorporar los cambios a "devel"
+
 ```
 git checkout devel
 git merge --no-ff release-NUMERO_VERSION
 ```
+
 > 1. Cambia al branch "devel"
 > 2. Realiza el merge
 
 Opcional: eliminar el branch del release
+
 ```
 git branch -d release-NUMERO_VERSION
 ```
@@ -67,12 +74,15 @@ git branch -d release-NUMERO_VERSION
 # BRANCHES PARA BUGFIXES
 
 Todos nacen de "master", Una vez realizados los arreglos, deben hacer merge hacia "master" y "devel". Deben llamarse bugfix-NUMERO_VERSION.NUMERO_SECUENCIA_BUG, donde NUMERO_SECUENCIA_BUG es un numero secuencial, identificador del bug (ejemplo: bugfix-2.3.1)
+
 ```
 git checkout -b bugfix-NUMERO_VERSION.NUMERO_SECUENCIA_BUG master
 ```
+
 > Crea el branch bugfix-NUMERO_VERSION.NUMERO_SECUENCIA_BUG
 
 Añade el nombre del bug al archivo Release-NUMERO_VERSION.txt:
+
 > 
 > Versión: NUMERO_VERSION
 > Fecha: FECHA_DE_CREACION
@@ -81,15 +91,18 @@ Añade el nombre del bug al archivo Release-NUMERO_VERSION.txt:
 > - developer 2: nombre developer 2
 > - developer 3: nombre developer 3
 > 
-> Bugfix NUMERO_VERSION.1: Corrige el bug [Descripción del bug] (<<<- esta línea es nueva)
+> Bugfix NUMERO_VERSION.1: Corrige el bug 1 (esta línea es nueva)
 
 Se incializa la numeración del branch
+
 ```
 git commit -a -m "Bugfix NUMERO_VERSION.NUMERO_SECUENCIA_BUG"
 ```
+
 > Inicializa la numeración de versión y bug en el branch
 
 Realizar los cambios en uno o mas commits y aplicar el cambio.
+
 ```
 git commit -m "Corrige el bug [Descripción del bug]" 
 git checkout master 
