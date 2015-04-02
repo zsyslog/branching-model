@@ -1,7 +1,7 @@
 # BRANCH MASTER Y DEVEL
 
 El branch "devel" nace del branch "master". Todas las nuevas funcionalidades nacerán del branch "devel"
-```
+```bash
 git checkout -b nueva_funcionalidad devel
 ```
 > Crea el branch devel
