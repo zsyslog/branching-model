@@ -15,9 +15,6 @@ git branch -d nueva_funcionalidad
 git push origin devel
 ```
 
-<p>
-	hola
-</p>
 > 1. Cambia al branch devel
 > 2. Actualiza sin fast-forward
 > 3. Borra el branch "nueva_funcionalidad"
@@ -34,13 +31,16 @@ git checkout -b release-NUMERO_VERSION devel
 
 Crear un archivo llamado Release-NUMERO_VERSION.txt con el siguiente contenido:
 
-> 
-> Versión: NUMERO_VERSION
-> Fecha: FECHA_DE_CREACION
+<hl>
+
+> Versión: NUMERO_VERSION<br>
+> Fecha: FECHA_DE_CREACION<br>
 > Equipo de trabajo: 
 > - developer 1: nombre developer 1
 > - developer 2: nombre developer 2
 > - developer 3: nombre developer 3
+
+<hl>
  
 
 ```
