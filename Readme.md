@@ -4,7 +4,7 @@ El branch "devel" nace del branch "master". Todas las nuevas funcionalidades nac
 ```bash
 git checkout -b nueva_funcionalidad devel
 ```
-> Crea el branch devel
+<i>Crea el branch devel</i>
 
 Luego de finalizar la nueva funcionalidad se deben llevar los cambios al branch "devel"
 
@@ -14,11 +14,12 @@ git merge --no-ff nueva_funcionalidad
 git branch -d nueva_funcionalidad
 git push origin devel
 ```
-
-> 1. Cambia al branch devel
-> 2. Actualiza sin fast-forward
-> 3. Borra el branch "nueva_funcionalidad"
-> 4. Actualiza los nuevos cambios en el branch "devel"
+<i>
+1. Cambia al branch devel
+2. Actualiza sin fast-forward
+3. Borra el branch "nueva_funcionalidad"
+4. Actualiza los nuevos cambios en el branch "devel"
+</i>
 
 # BRANCH RELEASE
 
@@ -31,16 +32,12 @@ git checkout -b release-NUMERO_VERSION devel
 
 Crear un archivo llamado Release-NUMERO_VERSION.txt con el siguiente contenido:
 
-<hl>
-
 > Versión: NUMERO_VERSION<br>
 > Fecha: FECHA_DE_CREACION<br>
 > Equipo de trabajo: 
 > - developer 1: nombre developer 1
 > - developer 2: nombre developer 2
 > - developer 3: nombre developer 3
-
-<hl>
  
 
 ```
@@ -89,9 +86,8 @@ git checkout -b bugfix-NUMERO_VERSION.NUMERO_SECUENCIA_BUG master
 
 Añade el nombre del bug al archivo Release-NUMERO_VERSION.txt:
 
-> 
-> Versión: NUMERO_VERSION
-> Fecha: FECHA_DE_CREACION
+> Versión: NUMERO_VERSION<br>
+> Fecha: FECHA_DE_CREACION<br>
 > Equipo de trabajo: 
 > - developer 1: nombre developer 1
 > - developer 2: nombre developer 2
