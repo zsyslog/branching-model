@@ -4,18 +4,20 @@ El branch "devel" nace del branch "master". Todas las nuevas funcionalidades nac
 ```
 git checkout -b nueva_funcionalidad devel
 ```
-> Creal el branch devel
+> Crea el branch devel
 
 Luego de finalizar la nueva funcionalidad se deben llevar los cambios al branch "devel"
 
-> git checkout devel
-Cambia al branch devel
-> git merge --no-ff nueva_funcionalidad
-Actualiza sin fast-forward
-> git branch -d nueva_funcionalidad
-Borra el branch "nueva_funcionalidad"
-> git push origin devel
-Actualiza los nuevos cambios en el branch "devel"
+```
+git checkout devel
+git merge --no-ff nueva_funcionalidad
+git branch -d nueva_funcionalidad
+git push origin devel
+```
+> 1. Cambia al branch devel
+> 2. Actualiza sin fast-forward
+> 3. Borra el branch "nueva_funcionalidad"
+> 4. Actualiza los nuevos cambios en el branch "devel"
 
 # BRANCH RELEASE
 
