@@ -1,3 +1,7 @@
+# ESQUEMA DE BRANCHING
+
+![Esquema de branching](https://raw.githubusercontent.com/zsyslog/branching-model/master/modelo-branching.png)
+
 # BRANCH MASTER Y DEVEL
 
 El branch "devel" nace del branch "master". Todas las nuevas funcionalidades nacerán del branch "devel"
