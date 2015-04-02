@@ -30,15 +30,14 @@ git checkout -b release-NUMERO_VERSION devel
 
 Crear un archivo llamado Release-NUMERO_VERSION.txt con el siguiente contenido:
 
-> -----------------------
+> 
 > Versión: NUMERO_VERSION
 > Fecha: FECHA_DE_CREACION
 > Equipo de trabajo: 
 > - developer 1: nombre developer 1
 > - developer 2: nombre developer 2
 > - developer 3: nombre developer 3
-> - developer 4: nombre developer 4
-> -----------------------
+> 
 ```
 git commit -a -m "Inicializando Versión NUMERO_VERSION" // incializa la versión NUMERO_VERSION
 ```
@@ -74,15 +73,14 @@ git checkout -b bugfix-NUMERO_VERSION.NUMERO_SECUENCIA_BUG master
 > Crea el branch bugfix-NUMERO_VERSION.NUMERO_SECUENCIA_BUG
 
 Añade el nombre del bug al archivo Release-NUMERO_VERSION.txt:
-> -----------------------
+> 
 > Versión: NUMERO_VERSION
 > Fecha: FECHA_DE_CREACION
 > Equipo de trabajo: 
 > - developer 1: nombre developer 1
 > - developer 2: nombre developer 2
 > - developer 3: nombre developer 3
-> - developer 4: nombre developer 4
-> -----------------------
+> 
 > Bugfix NUMERO_VERSION.1: Corrige el bug [Descripción del bug] (<<<- esta línea es nueva)
 
 Se incializa la numeración del branch
