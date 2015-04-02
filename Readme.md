@@ -1,22 +1,29 @@
 # BRANCH MASTER Y DEVEL
 
-"devel" nace del branch "master". Todas las nuevas funcionalidades nacen del branch "devel"
-
-> git checkout -b nueva_funcionalidad devel
+El branch "devel" nace del branch "master". Todas las nuevas funcionalidades nacerán del branch "devel"
+```
+git checkout -b nueva_funcionalidad devel
+```
+> Creal el branch devel
 
 Luego de finalizar la nueva funcionalidad se deben llevar los cambios al branch "devel"
 
-> git checkout devel // Cambia al branch devel
-> git rebase nueva_funcionalidad // Actualiza sin fast-forward
-> git branch -d nueva_funcionalidad // borrar el branch "nueva_funcionalidad"
-> git push origin devel // Actualiza los nuevos cambios en el branch "devel"
+> git checkout devel
+Cambia al branch devel
+> git merge --no-ff nueva_funcionalidad
+Actualiza sin fast-forward
+> git branch -d nueva_funcionalidad
+Borra el branch "nueva_funcionalidad"
+> git push origin devel
+Actualiza los nuevos cambios en el branch "devel"
 
 # BRANCH RELEASE
 
 Branch con los cambios listos para producción.
 Debe llamarse release-NUMERO_VERSION, donde NUMERO_VERSION es el identificador de la próxima versión que será lanzada. (Ejemplo: release-2.3)
 
-> git checkout -b release-NUMERO_VERSION develop // Crea el branch para el nuevo release
+> git checkout -b release-NUMERO_VERSION develop
+Crea el branch para el nuevo release
 
 Crear un archivo llamado Release-NUMERO_VERSION.txt con el siguiente contenido:
 
