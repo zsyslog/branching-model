@@ -37,10 +37,12 @@ Crear un archivo llamado Release-NUMERO_VERSION.txt con el siguiente contenido:
 > - developer 1: nombre developer 1
 > - developer 2: nombre developer 2
 > - developer 3: nombre developer 3
-> 
+ 
+
 ```
 git commit -a -m "Inicializando Versión NUMERO_VERSION"
 ```
+
 > Incializa la versión NUMERO_VERSION
 
 Liberación de una versión a producción
