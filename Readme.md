@@ -6,12 +6,17 @@
 
 El branch "devel" nace del branch "master". Todas las nuevas funcionalidades nacerán del branch "devel"
 
+```bash
+git checkout -b devel master
+```
+1. <i>Crea el branch devel</i>
+
 # BRANCH PARA NUEVA FUNCIONALIDAD
 
 ```bash
 git checkout -b nueva_funcionalidad devel
 ```
-1. <i>Crea el branch devel</i>
+1. <i>Crea el branch nueva_funcionalidad</i>
 
 Luego de finalizar la nueva funcionalidad se deben llevar los cambios al branch "devel"
 
