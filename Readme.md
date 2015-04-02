@@ -131,3 +131,7 @@ git branch -d hotfix-NUMERO_VERSION.NUMERO_SECUENCIA_BUG
 <p>3. <i>Realiza el merge de los cambios hacia el branch master</i></p>
 <p>4. <i>Se numera la versión del release en "master", que incluye el identificador del bug</i></p>
 <p>5. <i>Elimina el branch del bug</i></p>
+
+# COMANDOS UTILES
+
+[Historial, enmendar y regresar cambios](docs/cambios.md)
