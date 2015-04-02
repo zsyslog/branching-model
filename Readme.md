@@ -4,7 +4,7 @@ El branch "devel" nace del branch "master". Todas las nuevas funcionalidades nac
 ```bash
 git checkout -b nueva_funcionalidad devel
 ```
-<i>Crea el branch devel</i>
+1. <i>Crea el branch devel</i>
 
 Luego de finalizar la nueva funcionalidad se deben llevar los cambios al branch "devel"
 
@@ -29,7 +29,7 @@ Debe llamarse release-NUMERO_VERSION, donde NUMERO_VERSION es el identificador d
 git checkout -b release-NUMERO_VERSION devel
 ```
 
-<i>Crea el branch para el nuevo release</i>
+1. <i>Crea el branch para el nuevo release</i>
 
 Crear un archivo llamado Release-NUMERO_VERSION.txt con el siguiente contenido:
 
@@ -45,7 +45,7 @@ Crear un archivo llamado Release-NUMERO_VERSION.txt con el siguiente contenido:
 git commit -a -m "Inicializando Versión NUMERO_VERSION"
 ```
 
-<i>Incializa la versión NUMERO_VERSION</i>
+1. <i>Incializa la versión NUMERO_VERSION</i>
 
 Liberación de una versión a producción
 
@@ -83,7 +83,7 @@ Todos nacen de "master", Una vez realizados los arreglos, deben hacer merge haci
 git checkout -b bugfix-NUMERO_VERSION.NUMERO_SECUENCIA_BUG master
 ```
 
-> Crea el branch bugfix-NUMERO_VERSION.NUMERO_SECUENCIA_BUG
+1. <i>Crea el branch bugfix-NUMERO_VERSION.NUMERO_SECUENCIA_BUG</i>
 
 Añade el nombre del bug al archivo Release-NUMERO_VERSION.txt:
 
@@ -102,7 +102,7 @@ Se incializa la numeración del branch
 git commit -a -m "Bugfix NUMERO_VERSION.NUMERO_SECUENCIA_BUG"
 ```
 
-<i>Inicializa la numeración de versión y bug en el branch</i>
+1. <i>Inicializa la numeración de versión y bug en el branch</i>
 
 Realizar los cambios en uno o mas commits y aplicar el cambio.
 
