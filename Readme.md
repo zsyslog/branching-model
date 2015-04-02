@@ -34,9 +34,12 @@ Equipo de trabajo:
 
 Liberacióbn de una versión a producción
 
-> git checkout master // Cambia al branch "master"
-> git merge --no-ff release-NUMERO_VERSION // Combina los cambios realizados desde el nuevo relase a "master"
-> git tag -a NUMERO_VERSION // Se numera la versión del release en "master"
+> git checkout master
+Cambia al branch "master"
+> git merge --no-ff release-NUMERO_VERSION
+Combina los cambios realizados desde el nuevo relase a "master"
+> git tag -a NUMERO_VERSION
+Se numera la versión del release en "master"
 
 Además se deben incorporar los cambios a "devel"
 
