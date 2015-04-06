@@ -132,8 +132,4 @@ git branch -d hotfix-NUMERO_VERSION.NUMERO_SECUENCIA_BUG
 <p>4. <i>Se numera la versión del release en "master", que incluye el identificador del bug</i></p>
 <p>5. <i>Elimina el branch del bug</i></p>
 
-# COMANDOS UTILES
-
-- [Historial, enmendar y regresar cambios](docs/cambios.md)
-- [Seleccionar un commit específico con cherry-pick](docs/cherry-pick.md)
 
