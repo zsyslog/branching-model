@@ -32,6 +32,7 @@ git push origin devel
 <p>3. <i>Borra el branch "nueva_funcionalidad"</i></p>
 <p>4. <i>Actualiza los nuevos cambios en el branch "devel"</i></p>
 
+[1. Branch de nuevo desarrollo](https://github.com/zsyslog/branching-model/blob/master/screencast/01.crear-nueva-funcion-desde-devel.mov?raw=true)
 
 # BRANCH RELEASE
 
@@ -134,7 +135,7 @@ git branch -d bugfix-NUMERO_VERSION.NUMERO_SECUENCIA_BUG
 <p>4. <i>Se numera la versión del release en "master", que incluye el identificador del bug</i></p>
 <p>5. <i>Elimina el branch del bug</i></p>
 
-#Videos Screencast
+#Resumen de Videos Screencast
 [1. Branch de nuevo desarrollo](https://github.com/zsyslog/branching-model/blob/master/screencast/01.crear-nueva-funcion-desde-devel.mov?raw=true)
 <br>
 [2. Branch para trabajar en un nuevo release (beta)](https://github.com/zsyslog/branching-model/blob/master/screencast/02.nuevo-release-beta-inicializacion.mov?raw=true)
