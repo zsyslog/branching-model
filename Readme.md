@@ -123,7 +123,7 @@ git commit -m "Corrige el bug [Descripción del bug]"
 git checkout master 
 git merge --no-ff bugfix-NUMERO_VERSION.NUMERO_SECUENCIA_BUG 
 git tag -a NUMERO_VERSION.NUMERO_SECUENCIA_BUG 
-git branch -d hotfix-NUMERO_VERSION.NUMERO_SECUENCIA_BUG 
+git branch -d bugfix-NUMERO_VERSION.NUMERO_SECUENCIA_BUG 
 ```
 
 <p>1. <i>Crea el commit</i></p>
