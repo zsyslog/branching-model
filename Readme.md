@@ -132,4 +132,12 @@ git branch -d bugfix-NUMERO_VERSION.NUMERO_SECUENCIA_BUG
 <p>4. <i>Se numera la versión del release en "master", que incluye el identificador del bug</i></p>
 <p>5. <i>Elimina el branch del bug</i></p>
 
+Videos Screencast
 
+
+
+<script src="http://vjs.zencdn.net/4.0/video.js"></script>
+
+<video id="screencaste-01" class="video-js vjs-default-skin" controls preload="auto" width="500" data-setup="{}">
+<source src="https://github.com/zsyslog/branching-model/blob/master/screencast/01.crear-nueva-funcion-desde-devel.mov?raw=true" type='video/mp4'>
+</video>
