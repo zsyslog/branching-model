@@ -134,19 +134,10 @@ git branch -d bugfix-NUMERO_VERSION.NUMERO_SECUENCIA_BUG
 <p>4. <i>Se numera la versión del release en "master", que incluye el identificador del bug</i></p>
 <p>5. <i>Elimina el branch del bug</i></p>
 
-Videos Screencast
-[Branch de nuevo desarrollo](https://github.com/zsyslog/branching-model/blob/master/screencast/01.crear-nueva-funcion-desde-devel.mov?raw=true)
+#Videos Screencast
+[1. Branch de nuevo desarrollo](https://github.com/zsyslog/branching-model/blob/master/screencast/01.crear-nueva-funcion-desde-devel.mov?raw=true)
 <br>
-[Branch de nuevo desarrollo](screencast/01.crear-nueva-funcion-desde-devel.mov)
+[2. Branch para trabajar en un nuevo release (beta)](https://github.com/zsyslog/branching-model/blob/master/screencast/02.nuevo-release-beta-inicializacion.mov?raw=true)
 <br>
-<ul>
-	<li>
-		[Branch de nuevo desarrollo](https://github.com/zsyslog/branching-model/blob/master/screencast/01.crear-nueva-funcion-desde-devel.mov?raw=true)
-	</li>
-	<li>
-		[Branch para trabajar en un nuevo release (beta)](https://github.com/zsyslog/branching-model/blob/master/screencast/02.nuevo-release-beta-inicializacion.mov?raw=true)
-	</li>
-	<li>
-		[Branch para trabajar en un bugfix](https://github.com/zsyslog/branching-model/blob/master/screencast/03.procedimiento-branching-bugfix.mov?raw=true)
-	</li>
-</ul>
+[3. Branch para trabajar en un bugfix](https://github.com/zsyslog/branching-model/blob/master/screencast/03.procedimiento-branching-bugfix.mov?raw=true)
+<br>
