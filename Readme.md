@@ -32,7 +32,8 @@ git push origin devel
 <p>3. <i>Borra el branch "nueva_funcionalidad"</i></p>
 <p>4. <i>Actualiza los nuevos cambios en el branch "devel"</i></p>
 
-[1. Branch de nuevo desarrollo](https://github.com/zsyslog/branching-model/blob/master/screencast/01.crear-nueva-funcion-desde-devel.mov?raw=true)
+
+[Ver video](https://github.com/zsyslog/branching-model/blob/master/screencast/01.crear-nueva-funcion-desde-devel.mov?raw=true)
 
 # BRANCH RELEASE
 
@@ -89,6 +90,8 @@ Opcional: eliminar el branch del release
 git branch -d release-NUMERO_VERSION
 ```
 
+[Ver Video](https://github.com/zsyslog/branching-model/blob/master/screencast/02.nuevo-release-beta-inicializacion.mov?raw=true)
+
 # BRANCHES PARA BUGFIXES
 
 Todos nacen de "master", Una vez realizados los arreglos, deben hacer merge hacia "master" y "devel". Deben llamarse bugfix-NUMERO_VERSION.NUMERO_SECUENCIA_BUG, donde NUMERO_SECUENCIA_BUG es un numero secuencial, identificador del bug (ejemplo: bugfix-2.3.1)
@@ -134,6 +137,8 @@ git branch -d bugfix-NUMERO_VERSION.NUMERO_SECUENCIA_BUG
 <p>3. <i>Realiza el merge de los cambios hacia el branch master</i></p>
 <p>4. <i>Se numera la versión del release en "master", que incluye el identificador del bug</i></p>
 <p>5. <i>Elimina el branch del bug</i></p>
+
+[Ver Video](https://github.com/zsyslog/branching-model/blob/master/screencast/03.procedimiento-branching-bugfix.mov?raw=true)
 
 #Resumen de Videos Screencast
 [1. Branch de nuevo desarrollo](https://github.com/zsyslog/branching-model/blob/master/screencast/01.crear-nueva-funcion-desde-devel.mov?raw=true)
