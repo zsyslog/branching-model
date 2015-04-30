@@ -54,6 +54,7 @@ Crear un archivo llamado Release-NUMERO_VERSION.txt con el siguiente contenido:
  
 
 ```
+git add Release-NUMERO_VERSION.txt
 git commit -a -m "Inicializando Versión NUMERO_VERSION"
 ```
 
@@ -111,6 +112,7 @@ Añade el nombre del bug al archivo Release-NUMERO_VERSION.txt:
 Se incializa la numeración del branch
 
 ```
+git add Release-NUMERO_VERSION.txt
 git commit -a -m "Bugfix NUMERO_VERSION.NUMERO_SECUENCIA_BUG"
 ```
 
@@ -134,10 +136,14 @@ git branch -d bugfix-NUMERO_VERSION.NUMERO_SECUENCIA_BUG
 
 Videos Screencast
 
-
-
-<script src="http://vjs.zencdn.net/4.0/video.js"></script>
-
-<video id="screencaste-01" class="video-js vjs-default-skin" controls preload="auto" width="500" data-setup="{}">
-<source src="https://github.com/zsyslog/branching-model/blob/master/screencast/01.crear-nueva-funcion-desde-devel.mov?raw=true" type='video/mp4'>
-</video>
+<ul>
+	<li>
+		[Branch de nuevo desarrollo](https://github.com/zsyslog/branching-model/blob/master/screencast/01.crear-nueva-funcion-desde-devel.mov?raw=true)
+	</li>
+	<li>
+		[Branch para trabajar en un nuevo release (beta)](https://github.com/zsyslog/branching-model/blob/master/screencast/02.nuevo-release-beta-inicializacion.mov?raw=true)
+	</li>
+	<li>
+		[Branch para trabajar en un bugfix](https://github.com/zsyslog/branching-model/blob/master/screencast/03.procedimiento-branching-bugfix.mov?raw=true)
+	</li>
+</ul>
